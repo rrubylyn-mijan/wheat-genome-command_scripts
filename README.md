@@ -14,3 +14,6 @@ grep -c '^>' wheat+unanchored_contigs.fasta
 
 # Subtract 21 chromosomes to get number of unanchored contigs
 expr $(grep -c '^>' wheat+unanchored_contigs.fasta) - 21
+
+# Preview first 10 contigs in the FASTA file
+grep '^>' Glenn_pm_v1+unanchored_contigs.fasta | head -n 10
